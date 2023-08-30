@@ -2,13 +2,15 @@ class Car extends Vehicle
 {
     private String make, model;
     private int numWheels;
+    private Engine engine;
 
-    public Car(String make, String model, Wheel wheelType, int numWheels)
+    public Car(String make, String model, Wheel wheelType, int numWheels, Engine engine)
     {
         super(wheelType);
         this.make = make; 
         this.model = model; 
         this.numWheels = numWheels;
+        this.engine = engine;
     }
 
     public void Start()
@@ -40,6 +42,6 @@ class Car extends Vehicle
 
     public String toString()
     {
-        return "Car \n\tMake: " + make + "\n\tModel: " + model + "\n\tWheel: " + wheelType;
+        return "Car \n\tMake: " + make + "\n\tModel: " + model + "\n\tWheel: " + wheelType + "\n\tEngine: " + engine;
     }
 }

@@ -5,4 +5,9 @@ public class Engine {
         this.cylinders = cylinders;
         this.horsepower = horsepower;
     }
+
+    public String toString()
+    {
+        return cylinders + " cylinder " + horsepower + " hp";
+    }
 }
